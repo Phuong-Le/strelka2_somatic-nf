@@ -37,7 +37,6 @@
           "exists": true,
           "meta": ["bai_match"]
         }
-      },
-      "required": ["sample_id", "match_normal_id", "bam", "bam", "bam_match", "bai_match"]
+      }
     }
   }
