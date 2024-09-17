@@ -1,0 +1,42 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "sample_id": { 
+          "type": "string", 
+          "unique": true,
+          "meta": ["sample_id"] 
+        },
+        "match_id": { 
+          "type": "string",
+          "meta": ["match_id"]
+        },
+        "bam": { 
+          "type": "string", 
+          "format": "file-path", 
+          "exists": true,
+          "meta": ["bam"]
+        },
+        "bai": { 
+          "type": "string", 
+          "format": "file-path", 
+          "exists": true,
+          "meta": ["bai"]
+        },
+        "bam_match": { 
+          "type": "string", 
+          "format": "file-path", 
+          "exists": true,
+          "meta": ["bam_match"]
+        },
+        "bai_match": { 
+          "type": "string", 
+          "format": "file-path", 
+          "exists": true,
+          "meta": ["bai_match"]
+        }
+      }
+    }
+  }
