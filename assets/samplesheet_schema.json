@@ -9,9 +9,9 @@
           "unique": true,
           "meta": ["sample_id"] 
         },
-        "match_id": { 
+        "match_normal_id": { 
           "type": "string",
-          "meta": ["match_id"]
+          "meta": ["match_normal_id"]
         },
         "bam": { 
           "type": "string", 
@@ -37,6 +37,7 @@
           "exists": true,
           "meta": ["bai_match"]
         }
-      }
+      },
+      "required": ["sample_id", "match_normal_id", "bam", "bam", "bam_match", "bai_match"]
     }
   }
