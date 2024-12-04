@@ -1,5 +1,5 @@
 process strelka {
-    publishDir "${params.outdir}"
+    publishDir "${params.outdir}", mode: 'copy'
 
     input:
     tuple val(sample_id), val(match_id), path(candidate_indels), path(candidate_indels_idx), path(bam), path(bai), path(bam_match), path(bai_match)
